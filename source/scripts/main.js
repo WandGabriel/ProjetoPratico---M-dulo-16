@@ -21,24 +21,17 @@ form.addEventListener('submit', function(e){
 
     console.log ("Resultado IMC: "+resultadoImcConvertidoEmFloat);
     
-    switch (resultadoImcConvertidoEmFloat) 
-    {
-        case resultadoImcConvertidoEmFloat > 18.5:
+        if (resultadoImcConvertidoEmFloat < 18.5){
             console.log ("Abaixo do Peso!");
-            break;
-        case (resultadoImcConvertidoEmFloat >= 18.6) && (resultadoImcConvertidoEmFloat <= 24.9):
+        } else if (resultadoImcConvertidoEmFloat >= 18.6 && resultadoImcConvertidoEmFloat <= 24.9){
             console.log ("Parabéns, peso ideal!");
-            break;
-        case (resultadoImcConvertidoEmFloat >= 25.0) && (resultadoImcConvertidoEmFloat <= 29.9):
+        } else if (resultadoImcConvertidoEmFloat >= 25.0 && resultadoImcConvertidoEmFloat <= 29.9){
             console.log ("Levemente acima do Peso!");
-            break;
-        case resultadoImcConvertidoEmFloat >= 30.0 && resultadoImcConvertidoEmFloat <= 34.9:
+        } else if (resultadoImcConvertidoEmFloat >= 30.0 && resultadoImcConvertidoEmFloat <= 34.9) {
             console.log ("Obesidade Grau I");
-            break;
-        case resultadoImcConvertidoEmFloat >= 35.0 && resultadoImcConvertidoEmFloat <= 39.9:
+        } else if (resultadoImcConvertidoEmFloat >= 35.0 && resultadoImcConvertidoEmFloat <= 39.9) {
             console.log ("Obesidade Grau II (Severa)");
-            break;
-        default:
+        } else {
             console.log ("Osedidade Grau III (Mórbida)");
-    }
+        }
 })
