@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 970px;
+    background-color: #eee;
+    margin: 0 auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3px;
+    margin-top: 100px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    
+}
+
+header img {
+    padding-left: 30px;
+}
+
+form {
+    font-size: 25px;
+    padding: 50px;
+}
+
+form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+form button {
+    font-size: 25px;
+    margin-top: 50px;
+    padding: 10px;
+    border: none;
+    margin-left: 25px;
+    width: 38%;
+    border-radius: 10px;
+}
+
+span {
+    color: red;
+    font-weight: bold;
+}
+
+.dados_imc {
+    background-color: pink;
+}
+
+.resultado-imc {
+    background-color: purple;
+}
