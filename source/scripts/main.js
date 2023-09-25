@@ -69,7 +69,11 @@ form.addEventListener('submit', function(e){
                 categoriaResultado.innerHTML = classificacao;
                 imagemResultado.innerHTML = imagemTriste;
             }
-        }
+        }        
+})
 
-        
+form.addEventListener('reset', function(e){
+    descricaoImc.innerHTML = '';
+    imagemResultado.innerHTML = '';
+    categoriaResultado.innerHTML = '';
 })
