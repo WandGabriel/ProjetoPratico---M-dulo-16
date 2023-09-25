@@ -31,6 +31,7 @@ form {
         margin-bottom: 15px;
         border-radius: 10px;
         font-weight: bold;
+        width: 100%;
     }
 
     button {
@@ -45,21 +46,26 @@ form {
     }
 }
 
-span {
+.spanWarning {
     color: red;
     font-weight: bold;
 }
 
-.dados_imc {
-    background-color: pink;
+.spanAttention {
+    color: orange;
+    font-weight: bold;
+}
+
+.spanSuccess {
+    color: green;
+    font-weight: bold;
 }
 
 .resultado-imc {
-    background-color: purple;
     text-align: center;
     
     img {
-        max-width: 150px;
+        max-width: 120px;
         padding-top: 70px;
     }
 
