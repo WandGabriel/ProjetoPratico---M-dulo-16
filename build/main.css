@@ -46,6 +46,8 @@ form button {
   width: 38%;
   border-radius: 10px;
   cursor: pointer;
+  background-color: #808080;
+  color: #fff;
 }
 
 .spanWarning {
