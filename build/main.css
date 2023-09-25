@@ -77,4 +77,11 @@ form button {
   padding-top: 10px;
 }
 
+@media screen and (max-width: 819px) {
+  .container {
+    display: block;
+    max-height: 364px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
