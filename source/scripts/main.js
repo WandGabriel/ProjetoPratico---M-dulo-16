@@ -12,8 +12,8 @@ function calculeImc(peso, altura) {
     altura = parseFloat (altura);
 
     let calculo = peso / (altura * altura);
-
     return calculo.toFixed(2);
+
 }
 
 function substituirVirgulaPorPonto (valor) {
@@ -28,6 +28,7 @@ form.addEventListener('submit', function(e){
     valorPeso = substituirVirgulaPorPonto(valorPeso.value);
     valorAltura = substituirVirgulaPorPonto(valorAltura.value);
     const resultadoImc = calculeImc(valorPeso, valorAltura);
+    console.log("IMC: ",calculeImc('76.5','1.94'));
     const resultadoImcConvertidoEmFloat = parseFloat(resultadoImc);
     const mensagemResultadoImcPositivo = `<p> Seu IMC é de: <span class="spanSuccess">${resultadoImcConvertidoEmFloat}</span></p>`
     const mensagemResultadoImcAtencao = `<p> Seu IMC é de: <span class="spanAttention">${resultadoImcConvertidoEmFloat}</span></p>`
